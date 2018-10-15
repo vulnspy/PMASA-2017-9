@@ -2,9 +2,6 @@ version: '3'
 
 services:
   web:
-    image: vsplate/deb_apache2_php7_mysql5:latest
-    volumes:
-      - ./html/:/var/www/html/
-      - ./vsplatego.conf:/etc/supervisor/conf.d/vsplatego.conf
+    image: vsplate/pmasa-2017-9:latest
     ports:
       - "80:80"
